@@ -1,0 +1,15 @@
+GET http://localhost:5000/Tips/tipps/1
+
+###
+GET http://localhost:5000/Tips/MatchResults
+
+###
+GET http://localhost:5000/Tips/TipperNames
+
+###
+PUT http://localhost:5000/TipsAdmin/UpdateMatchResult/1
+
+{
+  "shot":2,
+  "received":3
+}
