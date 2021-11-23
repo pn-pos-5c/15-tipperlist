@@ -1,0 +1,13 @@
+<div *ngFor="let match of matches">
+  <span>{{match.id}}</span>
+
+  <span><app-flag [countryName]="match.team1Name"></app-flag></span>
+  :
+  <span><app-flag [countryName]="match.team2Name"></app-flag></span>
+
+  <input [(ngModel)]="match.shot" type="number">
+  :
+  <input [(ngModel)]="match.received" type="number">
+
+  <button (click)="updateResults(match)" class="btn btn-primary">Save</button>
+</div>

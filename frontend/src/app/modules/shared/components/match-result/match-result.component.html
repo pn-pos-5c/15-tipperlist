@@ -1,0 +1,10 @@
+<div>
+  <span>{{singleTipp?.matchWithResultId}}</span>
+
+  <span><app-flag [countryName]="match.team1Name"></app-flag></span>
+  :
+  <span><app-flag [countryName]="match.team2Name"></app-flag></span>
+
+  <span>{{match | result}}</span>
+  <span>{{singleTipp | result}}</span>
+</div>

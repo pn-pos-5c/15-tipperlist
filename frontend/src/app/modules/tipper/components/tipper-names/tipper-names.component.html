@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Gruppe</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr (click)="tipperIdSelected.emit(tipper.id)" *ngFor="let tipper of tippers | filterByGroup:selectedGroup">
+    <td>{{tipper.id}}</td>
+    <td>{{tipper.name}}</td>
+    <td>{{tipper.groups}}</td>
+  </tr>
+  </tbody>
+</table>

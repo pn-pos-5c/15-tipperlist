@@ -1,0 +1,12 @@
+<div>
+  <app-button (click)="groupSelected(group)" *ngFor="let group of groups">{{group}}</app-button>
+</div>
+<div class="container">
+  <div class="row">
+    <app-tipper-names class="col" [tippers]="tippers" [selectedGroup]="selectedGroup"
+                      (tipperIdSelected)="tipperSelected($event)"></app-tipper-names>
+    <app-tipper-matches class="col" [singleTipps]="singleTipps" [tipperName]="tipperName"></app-tipper-matches>
+  </div>
+</div>
+
+
